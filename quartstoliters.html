@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title> Convert Quarts to Liters </title>
+    <script>
+      /* Input: Volume in quarts
+       * Processing: Convert volume in quarts to liters.
+       * Output: Volume in liters
+       */
+
+      function quartsToLiters () {
+      // Get volume in quarts
+      var x = 4.2;
+      var y = 3;
+      var z = x * y;
+      z = Math.round(z);
+
+      //Display volume in liters to user
+      document.getElementById("outputDiv").innerHTML = liters;
+    }
+
+    </script>
+  </head>
+
+  <body>
+    Volume in quarts: <input type="text" id="volumeinquarts"><br>
+    <button type="button" onclick="quartsToLiters()">Convert</button><br>
+    Volume in liters: <div id="outputDiv"></div>
+  </body>
+</html>
